@@ -8,5 +8,3 @@ const GridComponent = () => {
         </div>
     );
 }
-
-export default GridComponent;

@@ -4,7 +4,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
     return(
-     <div className="bg-[#F9FBFC] h-screen w-full ">
+     <div className="bg-[#F9FBFC] h-screen">
 
             <input type="text" placeholder="Search Components" className="w-3/4 h-8 mt-8 p-4 ms-8 rounded-md border-2 text-sm border-gray-300 relative"/>
 

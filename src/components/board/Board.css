@@ -1,8 +1,12 @@
 .board {
     display: grid;
-    grid-template-columns: repeat(45, 25px); /* 10 columns */
-    grid-template-rows: repeat(20, 25px); /* 10 rows */
-    gap: 1px; /* Gap between tiles */
+    /* grid-template-columns: repeat(45, 25px); 
+    grid-template-rows: repeat(20, 25px);  */
+    background-color: #E9EFF2;
+    width: 83%;
+    height: 100vh;
+
+    /* gap: 1px;  */
   }
   .tile {
     background-color: #E9EFF2;
