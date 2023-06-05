@@ -1,0 +1,13 @@
+.circles1, .circles2, .circles3 {
+    height: 13px;
+    width: 13px;
+    background-color: #FF5F57;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+.circles2{
+    background-color: #FEBC2E;
+}
+.circles3{
+    background-color: #28C840;
+}

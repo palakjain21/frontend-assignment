@@ -1,0 +1,12 @@
+.searchInput{
+    position: absolute;
+  top: 20%;
+  right: 18rem;
+  /* transform: translateY(-50%); */
+  pointer-events: none;
+}  /* transform: translateY(-50%); */
+
+.shadow{
+    box-shadow: 3px 4px 20px #A0B8C789;
+    border-radius: 4px;
+}
