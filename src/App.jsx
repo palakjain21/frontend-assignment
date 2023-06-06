@@ -14,7 +14,7 @@ import { Canvas } from "./utils/Element";
 const App = () => {
   const [components,setComponents]=useState()
   const canvas=useMemo(()=>new Canvas(),[]) //creating a new canvas instance 
-
+  const [toggle, setToggle]= useState(true);
   return (
     <>
       {/* <Header />

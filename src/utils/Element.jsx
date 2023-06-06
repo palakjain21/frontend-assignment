@@ -6,7 +6,7 @@ export class Canvas {
     '[4,4]':{type:'table',text:"Click Me",coordinates:[4,4]}
   }
 
-    //This method is used to register an observer function. It takes a function o as a parameter, adds it to the observers array, and emits a change notification by calling the emitChange() method. The method returns a cleanup function that can be used to remove the observer from the observers array.
+//     //This method is used to register an observer function. It takes a function o as a parameter, adds it to the observers array, and emits a change notification by calling the emitChange() method. The method returns a cleanup function that can be used to remove the observer from the observers array.
     observe(o) {
       console.log("OBSERVE",o)
       this.observers.push(o)
@@ -36,15 +36,16 @@ export class Canvas {
       if(this.components[JSON.stringify([toX,toY])])return false
       return true
     }
+    addComponent(component,coordinates){
+      console.log("EVENT CALLED")
+      const key=JSON.stringify(coordinates)
+      this.components[key]=component
+    }
+// }
 
-    //this method is responsible for notifying all registered observers about a change in the button component's position. It invokes each observer function in the observers array and passes the updated position as an argument.
+//     //this method is responsible for notifying all registered observers about a change in the button component's position. It invokes each observer function in the observers array and passes the updated position as an argument.
     emitChange() {
       const pos = this.buttonComponentPosition
       this.observers.forEach((o) => o && o(pos))
     }
-    addComponent(component,coordinates){
-    console.log("EVENT CALLED")
-    const key=JSON.stringify(coordinates)
-    this.components[key]=component
-  }
   }

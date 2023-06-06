@@ -1,7 +1,7 @@
 // take type as prop and render accordingly
 // use useDrag hook to make the component draggable
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "../../utils/ItemTypes";
 import ButtonComponent from "../button/Button";
@@ -19,6 +19,7 @@ const DraggableComponents = ({ component }) => {
           isDragging: !!monitor.isDragging()
         })
       }), [])
+
     
       return (
         <div>
