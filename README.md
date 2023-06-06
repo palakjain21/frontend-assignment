@@ -1,3 +1,4 @@
+
 # App Builder
 
 This is a simple App builder application that allows users to create and manipulate components on a canvas. The application provides the following features:
@@ -6,6 +7,10 @@ This is a simple App builder application that allows users to create and manipul
 - Components can be dragged around the canvas.
 - The canvas has a fixed grid, and components snap to the grid locations.
 - The positions of the components are remembered across page refreshes using local storage.
+
+## Screenshots
+![Screenshot from 2023-06-07 03-19-25-1](https://github.com/palakjain21/frontend-assignment/assets/56087514/d45974f8-bae5-49ae-a31f-3c8cf1a3ff30)
+![Screenshot from 2023-06-07 03-19-40](https://github.com/palakjain21/frontend-assignment/assets/56087514/fc9102fc-8794-458a-8847-a7f878f8d848)
 
 ## Technologies Used
 
