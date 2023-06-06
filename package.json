@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tailwindcss -i ./src/App.css -o ./dist/output.css to create a output.css file && vite",
-    "build": "vite build",
+    "build": "tailwindcss -i ./src/App.css -o ./dist/output.css to create a output.css file && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
