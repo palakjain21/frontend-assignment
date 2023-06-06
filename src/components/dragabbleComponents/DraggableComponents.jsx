@@ -9,11 +9,11 @@ import Dropdown from "../dropdown/Dropdown";
 import Input from "../input/Input";
 import Table from "../table/Table";
 
-const DraggableComponents = ({ type }) => {
-
+const DraggableComponents = ({ component }) => {
+    const { type } = component;
     const [{ isDragging }, drag] = useDrag(() => ({
         type: ItemTypes.BUTTON,
-    
+        item: component,
         //The collect function is used to collect information about the drag state. It receives a monitor object as a parameter, which provides information about the drag operation. In this case, it checks if the button is currently being dragged by accessing monitor.isDragging() and returns an object with the isDragging property set to true or false.
         collect: (monitor) => ({
           isDragging: !!monitor.isDragging()

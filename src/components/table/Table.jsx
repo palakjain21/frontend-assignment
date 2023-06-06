@@ -1,8 +1,8 @@
 import React from "react";
 
-const Table = () => {
+const Table = React.forwardRef(({ isDragging }, ref) => {
     return(
-        <div className="overflow-x-auto z-50">
+        <div className="overflow-x-auto z-50" ref={ref}>
   <table className="table table-xs">
     <thead>
       <tr>
@@ -100,6 +100,6 @@ const Table = () => {
   </table>
 </div>
     );
-}
+})
 
 export default Table;

@@ -7,7 +7,7 @@ export const BoardSquare = ({ x, y, children, canvas }) => {
     () => ({
       accept: ItemTypes.BUTTON,
       canDrop: () => canvas.canMoveButton(x, y),
-      drop: () => canvas.moveButtonComponent(x, y),
+      drop: (item) => canvas.moveButtonComponent(x, y,item),
       collect: (monitor) => ({
         isOver: !!monitor.isOver(),
         canDrop: !!monitor.canDrop(),

@@ -3,8 +3,7 @@ import { useState } from "react";
 import search from "../../../assets/search.png";
 import "./Sidebar.css";
 
-const Sidebar = () => {
-    const [components, setComponents] = useState([]);
+const Sidebar = ({canvas,setComponents}) => {
 
   const handleButtonClick = (componentType) => {
     const newComponent = {
@@ -12,8 +11,8 @@ const Sidebar = () => {
       id: Math.random().toString(36).substring(7), // Generate a unique ID
       position: { x: 0, y: 0 } // Initial position
     };
-
-    setComponents([...components, newComponent]);
+    canvas.addComponent({type:"button",coordinates:[5,5]},[5,5])
+    setComponents([ newComponent]);
   };
 
     return(
