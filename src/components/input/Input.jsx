@@ -1,9 +1,10 @@
 import React from "react";
-
-const Input = () => {
+import "./Input.css";
+const Input = React.forwardRef(({ isDragging }, ref) => {
     return(
-        <input type="text" placeholder="Type here" className="input input-bordered input-accent w-full max-w-md z-50"/>
-    );
+            <textarea ref={ref} placeholder="Type here" className="p-2 z-50 rounded-sm textareaProp"/>
+        );
 }
+);
 
 export default Input;

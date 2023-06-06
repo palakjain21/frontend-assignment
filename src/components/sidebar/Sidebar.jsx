@@ -7,30 +7,21 @@ import table from "../../../assets/table.png";
 import ButtonComponent from "../button/Button";
 import "./Sidebar.css";
 
-const Sidebar = ({canvas,setComponents}) => {
-
+const Sidebar = ({ canvas, setComponents }) => {
   const handleButtonClick = (componentType) => {
     const newComponent = {
       type: componentType,
       id: Math.random().toString(36).substring(7), // Generate a unique ID
       position: { x: 2, y: 5 }, // Initial position
     };
-    canvas.addComponent({type:"button",coordinates:[5,5]},[5,5])
-    setComponents([ newComponent]);
+    canvas.addComponent(componentType);
+    setComponents([newComponent]);
   };
 
-//   canvas.observe((updatedComponents) => {
-//     setComponents(updatedComponents);
-//   });
-
-// useEffect(() => {
-//     canvas.observe(setComponents)})
-useEffect(()=>{
+  useEffect(() => {
     console.log(canvas.components);
-    canvas.observe(setComponents)
-},[canvas])
-
-
+    canvas.observe(setComponents);
+  }, [canvas]);
 
   return (
     <div className="bg-[#F9FBFC] h-screen">
@@ -106,7 +97,6 @@ useEffect(()=>{
         </div>
       </div>
       <hr className="mt-4 ms-8 w-3/4" />
-      
     </div>
   );
 };

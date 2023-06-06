@@ -1,0 +1,6 @@
+.textareaProp, .textareaProp:focus, .textareaProp:active, .textareaProp:hover{
+    border: 2px solid #38BDF8;
+}
+.textareaProp:hover, .textareaProp:active, .textareaProp:focus{
+    text-decoration: none !important;
+}
