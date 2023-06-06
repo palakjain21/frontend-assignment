@@ -24,7 +24,6 @@ This is a simple App builder application that allows users to create and manipul
 
 ### How to run locally
 
-    Run npx tailwindcss -i ./src/App.css -o ./dist/output.css to create a output.css file
     Run npm run dev
 
 ## Usage
@@ -43,3 +42,4 @@ Here are some potential enhancements that can be made to improve the application
     Implement the functionality to remove components from the canvas.
     Allow users to resize components.
     Implement additional component types.
+    Use redux(state management library) for more complex implemetation.
