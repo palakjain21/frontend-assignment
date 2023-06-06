@@ -48,3 +48,7 @@ Here are some potential enhancements that can be made to improve the application
     Allow users to resize components.
     Implement additional component types.
     Use redux(state management library) for more complex implemetation.
+    
+## Deployment
+    Platform: Vercel
+    Link: https://frontend-assignment-lemon.vercel.app/
