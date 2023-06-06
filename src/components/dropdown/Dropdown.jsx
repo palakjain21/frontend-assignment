@@ -2,7 +2,7 @@ import React from "react";
 
 const Dropdown = () => {
     return(
-        <div className="dropdown">
+        <div className="dropdown z-50">
   <label tabIndex={0} className="btn m-1">Click</label>
   <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><a>Item 1</a></li>

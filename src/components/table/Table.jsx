@@ -2,7 +2,7 @@ import React from "react";
 
 const Table = () => {
     return(
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto z-50">
   <table className="table table-xs">
     <thead>
       <tr>
