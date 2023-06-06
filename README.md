@@ -10,7 +10,7 @@ This is a simple App builder application that allows users to create and manipul
 ## Technologies Used
 
 - React: JavaScript library for building user interfaces.
-- HTML5 Drag and Drop API: Used for dragging and dropping components on the canvas.
+- React-dnd: Used for dragging and dropping components on the canvas.
 - Tailwind CSS: Styling the components and canvas layout.
 - Dasiy UI: DaisyUI adds component class names to Tailwind CSS to write the components faster
 - Local Storage: Used to store component positions across page refreshes.
