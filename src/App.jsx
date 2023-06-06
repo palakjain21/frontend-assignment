@@ -1,4 +1,4 @@
-import React,{useMemo} from "react";
+import React,{useMemo, useState} from "react";
 import "./App.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -13,6 +13,7 @@ import { Canvas } from "./utils/Element";
 
 const App = () => {
   const canvas=useMemo(()=>new Canvas(),[]) //creating a new canvas instance 
+  const [toggle, setToggle]= useState(true);
   return (
     <>
       {/* <Header />
@@ -24,7 +25,7 @@ const App = () => {
       <div className="flex w-full">
         <DndProvider backend={HTML5Backend}>
         <Board className="w-3/4" canvas={canvas} />
-        <Sidebar className="w-1/4 h-screen" />
+        <Sidebar className="w-1/4 h-screen" canvas={canvas} toggle={toggle} setToggle={setToggle}/>
         </DndProvider>
       </div>
 \    </>

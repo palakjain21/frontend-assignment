@@ -11,3 +11,11 @@
 .circles3{
     background-color: #28C840;
 }
+.button{
+    width: 96px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5046E4;
+}
